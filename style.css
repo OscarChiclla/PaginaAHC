@@ -1,8 +1,8 @@
 /*Custom properties*/
 :root{
-    --first-color: #d90062;
+    --first-color: #ffdf00;
     --first-alpha-color: rgba(217, 0, 98, 0.75);
-    --second-color: #14192d;
+    --second-color: #a00000;
     --second-alpha-color: rgba(20, 25, 45, 0.75);
     --third-color: #501464;
     --third-alpha-color: rgba(80, 20, 100, 0.75);
@@ -274,7 +274,8 @@ P{
 }
 
 .hero-image-title{
-    font-size: 7.5vw;
+    font-size: 6.5vw;
+    font-family: Arial, Helvetica, sans-serif;
     color:var(--color);
 }
 
@@ -504,6 +505,7 @@ progress::-moz-progress-bar{
     
     .text-lg-right{
         text-align:right;
+        margin-top: 100px;
     }
     
     .full-lg-screen{
@@ -702,7 +704,7 @@ progress::-moz-progress-bar{
     }
     .about{
         display: grid;
-        grid-template-columns: repeat(3,30%);
+        grid-template-columns: repeat(2,50%);
         justify-content: space-between;
         align-content: center;
     }
@@ -733,4 +735,87 @@ progress::-moz-progress-bar{
     .portfolio .section-title{
         grid-column: span 3;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container{
+    width: 100%;
+    display: flex;
+    max-width: 1000px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.card{
+    width: 100%;
+    max-width: 293px;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all .4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform:translateY(-3%);
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+}
+
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+}
+
+.card .contenido h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.card .contenido p{
+    line-height: 1.5;
+    color: #6a6a6a;
+}
+
+.card .contenido button{
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #2fb4cc;
+    border: thin solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 0.4s ease;
+    padding: 0.5rem 0;
+    width: 100%;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.card .contenido button:hover{
+    background-color: #2fb4cc;
+    color:#fff;
 }
