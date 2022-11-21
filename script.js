@@ -1,4 +1,16 @@
-/*Menu*/
+const platos = ["1 Pollo a la brasa", "1/2 Pollo a la brasa", "1/4 Pollo a la brasa", "Lomo saltado", "Pollo saltado", "Bistec a lo pobre", "Mostrito", "Tallarines con Pechuga o Higado", "Porcion de arroz chaufa"];
+/*
+((d)=>{
+    d.addEventListener("click",(e)=>{
+        if(!e.target.matches(".card .contenido div button")){
+            return false;
+        }
+        alert("klk");
+    });
+})(document);
+
+
+
 ((d)=>{
     const $btnMenu = document.querySelector(".menu-btn"),
           $menu = document.querySelector(".menu");
@@ -19,7 +31,7 @@
     });
 })(document);
 
-/*Contact-Form*/
+
 ((d)=>{
     const $form = d.querySelector(".contact-form"),
           $loader = d.querySelector(".contact-form-loader"),
@@ -51,4 +63,4 @@
            }, 3000); 
         });
     });
-})(document);
+})(document);*/
