@@ -544,7 +544,7 @@ progress::-moz-progress-bar{
     padding: .5rem;
     text-align: center;
     color: var(--white-color);
-    background-color: var(--third-color);
+    background-color: #a00000;
 }
 
 .header{
